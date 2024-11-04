@@ -2,6 +2,8 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Droplet } from 'lucide-svelte';
 	import About from './components/about.svelte';
+	import Market from './components/market.svelte';
+	import Process from './components/process.svelte';
 </script>
 
 <div class="w-full min-h-screen flex flex-col justify-center items-center">
@@ -15,7 +17,7 @@
 				Transformando residuos en <span class="text-[#4ea971]">energía</span> limpia.
 			</h3>
 
-			<p class="text-xs mt-2 text-muted-foreground">
+			<p class="text-sm mt-2 text-muted-foreground">
 				Oil2Bio convierte residuos petroleros en biocombustibles sostenibles. Colabora con compañías
 				en Arabia Saudita y Kuwait, ofreciendo una solución innovadora y rentable.
 			</p>
@@ -25,4 +27,8 @@
 	</div>
 
 	<About />
+
+	<Market />
+
+	<Process />
 </div>
