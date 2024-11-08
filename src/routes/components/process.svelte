@@ -3,16 +3,16 @@
 	import { Factory, Package, Truck, Warehouse } from 'lucide-svelte';
 </script>
 
-<div class="w-full h-screen space-x-2 flex flex-row">
-	<div class="w-[40%] justify-center h-screen flex flex-col text-left px-12">
-		<h3 class="text-4xl font-extrabold">Proceso de Conversión</h3>
-		<p class="text-sm mt-2 text-muted-foreground">
+<div class="w-full h-screen space-x-2 flex flex-col justify-center px-12 space-y-12">
+	<div>
+		<h3 class="text-4xl font-extrabold text-center">Proceso de Conversión</h3>
+		<p class=" mt-2 text-muted-foreground text-center">
 			El proceso de conversión de residuos en biocombustible consta de tres etapas principales.
 		</p>
 	</div>
 
-	<div class="w-[60%] h-screen flex flex-col space-y-6 justify-center items-center px-4">
-		<Card.Root class="w-full shadow-none">
+	<div class="flex flex-row space-x-4 w-full justify-center">
+		<Card.Root class="w-1/4 shadow-none">
 			<Card.Content class="flex justify-between items-center">
 				<div class="flex flex-col">
 					<div class="flex space-x-2">
@@ -32,7 +32,7 @@
 			</Card.Content>
 		</Card.Root>
 
-		<Card.Root class="w-full shadow-none">
+		<Card.Root class="w-1/4 shadow-none">
 			<Card.Content class="flex flex-row items-center justify-between">
 				<div class="flex flex-col">
 					<div class="flex space-x-2">
@@ -50,8 +50,10 @@
 				</div>
 			</Card.Content>
 		</Card.Root>
+	</div>
 
-		<Card.Root class="w-full shadow-none">
+	<div class="w-full flex justify-center">
+		<Card.Root class="w-1/4 shadow-none">
 			<Card.Content class="flex flex-row items-center justify-between">
 				<div class="flex flex-col">
 					<div class="flex space-x-2">

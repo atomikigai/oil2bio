@@ -1,12 +1,26 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
-	import { Droplet } from 'lucide-svelte';
+	import { CircleArrowDown, Droplet } from 'lucide-svelte';
 	import About from './components/about.svelte';
 	import Market from './components/market.svelte';
 	import Process from './components/process.svelte';
+	import Finance from './components/finance.svelte';
+	import Investors from './components/investors.svelte';
 </script>
 
 <div class="w-full min-h-screen flex flex-col justify-center items-center">
+	<nav
+		class="w-full flex justify-center h-12 items-center shadow-md fixed top-0 left-0 bg-white z-10"
+	>
+		<ul class="flex space-x-6 font-medium">
+			<li>Inicio</li>
+			<li>Nuestra tecnologia</li>
+			<li>Analisis de mercado</li>
+			<li>Proceso de conversión</li>
+			<li>Plan financiero</li>
+			<li>Propuesta de valor</li>
+		</ul>
+	</nav>
 	<div class="h-screen text-center flex justify-center items-center flex-col space-y-6 w-[35rem]">
 		<div class="flex space-x-1 justify-center">
 			<h3 class="text-xl font-bold uppercase">Oil2Bio</h3>
@@ -23,7 +37,9 @@
 			</p>
 		</div>
 
-		<Button class="bg-[#4ea971] w-1/4 text-xs hover:bg-[#70b389] ">Conocer más</Button>
+		<!-- <Button class="bg-[#4ea971] w-1/4 text-xs hover:bg-[#70b389] ">Conocer más</Button> -->
+
+		<CircleArrowDown color="#4ea971" class="animate-bounce cursor-pointer" size={40} />
 	</div>
 
 	<About />
@@ -31,4 +47,8 @@
 	<Market />
 
 	<Process />
+
+	<Finance />
+
+	<Investors />
 </div>
