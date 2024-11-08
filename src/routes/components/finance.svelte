@@ -3,7 +3,10 @@
 	import { ChartNoAxesCombined } from 'lucide-svelte';
 </script>
 
-<div class="w-full h-screen justify-center py-12 flex items-center flex-col space-y-12">
+<div
+	class="w-full h-screen justify-center py-12 flex items-center flex-col space-y-12"
+	id="finance"
+>
 	<div class="flex flex-row items-center space-x-4">
 		<h3 class="text-4xl font-extrabold uppercase">Plan financiero</h3>
 		<ChartNoAxesCombined color="#4ea971" size={40} />

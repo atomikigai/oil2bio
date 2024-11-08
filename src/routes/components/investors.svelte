@@ -3,7 +3,7 @@
 	import { Handshake } from 'lucide-svelte';
 </script>
 
-<div class="w-full h-screen flex justify-center items-center flex-col space-y-12">
+<div class="w-full h-screen flex justify-center items-center flex-col space-y-12" id="investors">
 	<h3 class="text-4xl font-extrabold uppercase">Propuesta de Valor para Inversores</h3>
 	<Handshake size={40} color="#4ea971" />
 

@@ -1,16 +1,12 @@
 <script>
 	import * as Card from '$lib/components/ui/card';
-	import {
-		Boxes,
-		ChartColumnIncreasing,
-		PackageOpen,
-		Shuffle,
-		TrendingDown,
-		TrendingUp
-	} from 'lucide-svelte';
+	import { Boxes, ChartColumnIncreasing, PackageOpen } from 'lucide-svelte';
 </script>
 
-<div class="w-full flex flex-col px-4 space-y-12 relative items-center">
+<div
+	class="w-full h-screen justify-center flex flex-col px-4 space-y-12 relative items-center"
+	id="market"
+>
 	<h3 class="text-center text-4xl font-extrabold uppercase">Analisis de mercado</h3>
 
 	<Card.Root class="shadow-none w-1/3  ">

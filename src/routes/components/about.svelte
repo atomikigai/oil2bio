@@ -3,7 +3,7 @@
 	import { ChartSpline, Microchip, Sprout } from 'lucide-svelte';
 </script>
 
-<div class="w-full h-screen px-4 flex flex-col justify-center items-center space-y-12">
+<div class="w-full h-screen px-4 flex flex-col justify-center items-center space-y-12" id="tech">
 	<div class="text-center flex justify-center items-center flex-col space-y-2">
 		<h1 class="text-4xl font-extrabold uppercase">caracteristicas de nuestra tecnologia</h1>
 		<p class="w-[50rem] text-sm text-muted-foreground">

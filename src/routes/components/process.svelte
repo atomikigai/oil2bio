@@ -1,9 +1,9 @@
 <script>
 	import * as Card from '$lib/components/ui/card';
-	import { Factory, Package, Truck, Warehouse } from 'lucide-svelte';
+	import { Factory, Package, Warehouse } from 'lucide-svelte';
 </script>
 
-<div class="w-full h-screen space-x-2 flex flex-col justify-center px-12 space-y-12">
+<div class="w-full h-screen space-x-2 flex flex-col justify-center px-12 space-y-12" id="process">
 	<div>
 		<h3 class="text-4xl font-extrabold text-center">Proceso de Conversión</h3>
 		<p class=" mt-2 text-muted-foreground text-center">
