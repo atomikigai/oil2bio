@@ -66,7 +66,12 @@
 
 		<!-- <Button class="bg-[#4ea971] w-1/4 text-xs hover:bg-[#70b389] ">Conocer más</Button> -->
 
-		<CircleArrowDown color="#4ea971" class="animate-bounce cursor-pointer" size={40} />
+		<CircleArrowDown
+			color="#4ea971"
+			class="animate-bounce cursor-pointer"
+			size={40}
+			onclick={() => scrollToSection('tech')}
+		/>
 	</div>
 
 	<About />
