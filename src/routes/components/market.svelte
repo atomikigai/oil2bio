@@ -4,12 +4,14 @@
 </script>
 
 <div
-	class="w-full h-screen justify-center flex flex-col px-4 space-y-12 relative items-center"
+	class="w-full min-h-screen justify-center flex flex-col px-4 space-y-12 relative items-center"
 	id="market"
 >
-	<h3 class="text-center text-4xl font-extrabold uppercase">Analisis de mercado</h3>
+	<h3 class="text-center 2xl:text-4xl text-2xl font-extrabold uppercase w-full">
+		Analisis de mercado
+	</h3>
 
-	<Card.Root class="shadow-none w-1/3  ">
+	<Card.Root class="shadow-none 2xl:w-1/3  ">
 		<Card.Content class="flex justify-between items-center">
 			<div>
 				<div class="text-lg font-medium flex items-center space-x-2">
@@ -29,7 +31,7 @@
 	<!-- <TrendingDown class="absolute top-[20rem] left-[24rem] rotate-45" size={48} />
 		<Shuffle class="absolute top-[14rem] right-[38rem] rotate-180" size={42} /> -->
 
-	<Card.Root class="shadow-none w-1/3">
+	<Card.Root class="shadow-none 2xl:w-1/3">
 		<Card.Content class="flex justify-between items-center">
 			<div>
 				<div class="text-lg font-medium flex items-center space-x-2">
@@ -48,7 +50,7 @@
 
 	<!-- <TrendingUp class="absolute top-[18rem] right-[30rem] rotate-0" size={48} /> -->
 
-	<Card.Root class="shadow-none w-1/3">
+	<Card.Root class="shadow-none 2xl:w-1/3">
 		<Card.Content class="flex justify-between items-center">
 			<div>
 				<div class="text-lg font-medium flex items-center space-x-2">

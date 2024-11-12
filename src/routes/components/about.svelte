@@ -4,16 +4,18 @@
 </script>
 
 <div class="w-full h-screen px-4 flex flex-col justify-center items-center space-y-12" id="tech">
-	<div class="text-center flex justify-center items-center flex-col space-y-2">
-		<h1 class="text-4xl font-extrabold uppercase">caracteristicas de nuestra tecnologia</h1>
-		<p class="w-[50rem] text-sm text-muted-foreground">
+	<div class="text-center flex justify-center items-center flex-col space-y-2 w-full">
+		<h1 class="text-2xl font-extrabold uppercase">caracteristicas de nuestra tecnologia</h1>
+		<p class="2xl:w-[50rem] text-sm text-muted-foreground">
 			En <span class="text-[#4ea971] font-medium">Oil2Bio</span>, nuestro principal objetivo es
 			proteger el medio ambiente, aprovechando herramientas y tecnologías que nos permitan hacerlo
 			de manera efectiva y sostenible.
 		</p>
 	</div>
-	<div class="w-full flex flex-row space-x-6 justify-center items-center">
-		<Card.Root class="w-1/4 h-[12rem] shadow-none">
+	<div
+		class="w-full flex 2xl:flex-row flex-col 2xl:space-x-6 max-sm:space-y-4 justify-center items-center"
+	>
+		<Card.Root class="2xl:w-1/4 w-full h-[12rem] shadow-none">
 			<Card.Header>
 				<Microchip color="#e06e40" />
 			</Card.Header>
@@ -25,7 +27,7 @@
 			</Card.Content>
 		</Card.Root>
 
-		<Card.Root class="w-1/4 h-[12rem] shadow-none">
+		<Card.Root class="2xl:w-1/4 w-full h-[12rem] shadow-none">
 			<Card.Header>
 				<Sprout color="#4ea971" />
 			</Card.Header>
@@ -37,7 +39,7 @@
 			</Card.Content>
 		</Card.Root>
 
-		<Card.Root class="w-1/4 h-[12rem] shadow-none">
+		<Card.Root class="2xl:w-1/4 w-full h-[12rem] shadow-none">
 			<Card.Header>
 				<ChartSpline color="#6277fd" />
 			</Card.Header>
