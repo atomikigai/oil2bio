@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="w-full h-screen space-x-2 flex flex-col justify-center 2xl:px-12 2xl:space-y-12 px-4"
+	class="w-full h-screen 2xl:space-x-2 flex flex-col justify-center 2xl:px-12 2xl:space-y-12 px-4"
 	id="process"
 >
 	<div>

@@ -11,7 +11,7 @@
 	import TranslatorText from '$lib/components/app/translatorText.svelte';
 	import { selectedLanguage } from '$lib/components/app/store';
 
-	let menu = $state(true);
+	let menu = $state(false);
 
 	function scrollToSection(selected: string) {
 		const section = document.getElementById(selected);
