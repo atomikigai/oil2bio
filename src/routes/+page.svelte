@@ -38,12 +38,13 @@
 			<Menu />
 		</button>
 
+		<div class="w-full flex items-center justify-end">
+			<Translator />
+		</div>
+
 		<Sheet.Root open={menu} onOpenChange={() => (menu = !menu)}>
 			<Sheet.Content side="left">
 				<MenuList {scrollToSection} />
-				<div class="w-full flex items-center justify-center">
-					<Translator />
-				</div>
 			</Sheet.Content>
 		</Sheet.Root>
 	</nav>
