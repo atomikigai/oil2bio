@@ -1,0 +1,42 @@
+[
+    {
+        "key": "title",
+        "text": "Features of our technology"
+    },
+    {
+        "key": "description",
+        "text": "At"
+    },
+    {
+        "key": "oiltobio",
+        "text": "Oil2Bio"
+    },
+    {
+        "key": "description",
+        "text": "our main objective is to protect the environment, taking advantage of tools and technologies that allow us to do so in an effective and sustainable manner."
+    },
+    {
+        "key": "card-one-title",
+        "text": "Advanced technology"
+    },
+    {
+        "key": "card-one-description",
+        "text": "Transforms oil residues into clean biofuels using state-of-the-art technologies."
+    },
+    {
+        "key": "card-two-title",
+        "text": "Environmental impact"
+    },
+    {
+        "key": "card-two-description",
+        "text": "Reduces the environmental and economic burden of oil refineries."
+    },
+    {
+        "key": "card-three-title",
+        "text": "Growing Demand"
+    },
+    {
+        "key": "card-three-description",
+        "text": "It offers a high demand product in a market in energy transition."
+    }
+]

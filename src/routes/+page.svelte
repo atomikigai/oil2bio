@@ -7,8 +7,11 @@
 	import Investors from './components/investors.svelte';
 	import * as Sheet from '$lib/components/ui/sheet';
 	import MenuList from './components/menu-list.svelte';
+	import Translator from '$lib/components/app/translator.svelte';
+	import TranslatorText from '$lib/components/app/translatorText.svelte';
+	import { selectedLanguage } from '$lib/components/app/store';
 
-	let menu = false;
+	let menu = $state(false);
 
 	function scrollToSection(selected: string) {
 		const section = document.getElementById(selected);
@@ -25,6 +28,7 @@
 		class="w-full lg:flex hidden justify-center h-12 items-center shadow-md fixed top-0 left-0 bg-white z-10"
 	>
 		<MenuList {scrollToSection} />
+		<Translator />
 	</nav>
 
 	<!-- Menu para moviles -->
@@ -51,12 +55,44 @@
 		</div>
 		<div class="w-full">
 			<h3 class="uppercase 2xl:text-4xl font-extrabold 2xl:w-[35rem] text-xl">
-				Transformando residuos en <span class="text-[#4ea971]">energía</span> limpia.
+				<!-- Transformando residuos en <span class="text-[#4ea971]">energía</span> limpia. -->
+
+				<TranslatorText
+					dictionarie={$selectedLanguage}
+					section="home"
+					key="title"
+					text="Transformando residuos en"
+				/>
+
+				{#if $selectedLanguage === 'es'}
+					<span class="text-[#4ea971]"
+						><TranslatorText
+							dictionarie={$selectedLanguage}
+							section="home"
+							key="title"
+							text="Energia"
+						/></span
+					>
+				{/if}
+
+				<span class="text-[#4ea971]"
+					><TranslatorText
+						dictionarie={$selectedLanguage}
+						section="home"
+						key="title2"
+						text="limpia"
+					/></span
+				>
 			</h3>
 
 			<p class="text-sm mt-2 text-muted-foreground">
-				Oil2Bio convierte residuos petroleros en biocombustibles sostenibles. Colabora con compañías
-				en Arabia Saudita y Kuwait, ofreciendo una solución innovadora y rentable.
+				<TranslatorText
+					dictionarie={$selectedLanguage}
+					section="home"
+					key="description"
+					text="Oil2Bio convierte residuos petroleros en biocombustibles sostenibles. Colabora con compañías
+				en Arabia Saudita y Kuwait, ofreciendo una solución innovadora y rentable."
+				/>
 			</p>
 		</div>
 

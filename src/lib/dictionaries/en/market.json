@@ -1,0 +1,34 @@
+[
+    {
+        "key": "title",
+        "text": "Market analysis"
+    },
+    {
+        "key": "description",
+        "text": "At"
+    },
+    {
+        "key": "card-one-title",
+        "text": "Global Growth"
+    },
+    {
+        "key": "card-one-description",
+        "text": "The biofuels market will reach $154 billion USD in 2026, with annual growth of 5.2%."
+    },
+    {
+        "key": "card-two-title",
+        "text": "Strategic Alliances"
+    },
+    {
+        "key": "card-two-description",
+        "text": "Collaboration with Saudi Aramco and Kuwait Oil Company to process millions of tons of waste."
+    },
+    {
+        "key": "card-three-title",
+        "text": "Volume of Waste"
+    },
+    {
+        "key": "card-three-description",
+        "text": "Saudi Arabia generates 2 million tons annually, Kuwait 850,000 tons."
+    }
+]
