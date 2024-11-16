@@ -1,0 +1,34 @@
+[
+    {
+        "key": "title",
+        "text": "عملية التحويل"
+    },
+    {
+        "key": "description",
+        "text": "تتكون عملية تحويل النفايات إلى وقود حيوي من ثلاث خطوات رئيسية."
+    },
+    {
+        "key": "card-one-title",
+        "text": "المجموعة"
+    },
+    {
+        "key": "card-one-description",
+        "text": "جمع نفايات المصافي في المملكة العربية السعودية والكويت."
+    },
+    {
+        "key": "card-two-title",
+        "text": "العلاج"
+    },
+    {
+        "key": "card-two-description",
+        "text": "الهدرجة والتنقية والتحفيز لإنتاج وقود حيوي عالي الجودة."
+    },
+    {
+        "key": "card-three-title",
+        "text": "التوزيع"
+    },
+    {
+        "key": "card-three-description",
+        "text": "شحن الوقود الحيوي إلى السوق العالمية."
+    }
+]

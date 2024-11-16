@@ -1,4 +1,6 @@
 <script>
+	import { selectedLanguage } from '$lib/components/app/store';
+	import TranslatorText from '$lib/components/app/translatorText.svelte';
 	import * as Card from '$lib/components/ui/card';
 	import { Factory, Package, Warehouse } from 'lucide-svelte';
 </script>
@@ -8,9 +10,21 @@
 	id="process"
 >
 	<div>
-		<h3 class="2xl:text-4xl text-2xl font-extrabold text-center">Proceso de Conversión</h3>
+		<h3 class="2xl:text-4xl text-2xl font-extrabold text-center">
+			<TranslatorText
+				dictionarie={$selectedLanguage}
+				section="process"
+				key="title"
+				text="Proceso de Conversión"
+			/>
+		</h3>
 		<p class=" mt-2 text-muted-foreground text-center max-sm:mb-4">
-			El proceso de conversión de residuos en biocombustible consta de tres etapas principales.
+			<TranslatorText
+				dictionarie={$selectedLanguage}
+				section="process"
+				key="description"
+				text="El proceso de conversión de residuos en biocombustible consta de tres etapas principales."
+			/>
 		</p>
 	</div>
 
@@ -20,10 +34,22 @@
 				<div class="flex flex-col 2xl:w-[70%]">
 					<div class="flex space-x-2">
 						<Warehouse color="#4ea971" />
-						<h3 class="font-medium">Recolección</h3>
+						<h3 class="font-medium">
+							<TranslatorText
+								dictionarie={$selectedLanguage}
+								section="process"
+								key="card-one-title"
+								text="Recolección"
+							/>
+						</h3>
 					</div>
 					<p class="text-sm text-muted-foreground">
-						Recogida de residuos de refinerías en Arabia Saudita y Kuwait.
+						<TranslatorText
+							dictionarie={$selectedLanguage}
+							section="process"
+							key="card-one-description"
+							text="Recogida de residuos de refinerías en Arabia Saudita y Kuwait."
+						/>
 					</p>
 				</div>
 
@@ -40,10 +66,22 @@
 				<div class="flex flex-col 2xl:w-[70%]">
 					<div class="flex space-x-2">
 						<Factory color="#6277fd" />
-						<h3 class="font-medium">Tratamiento</h3>
+						<h3 class="font-medium">
+							<TranslatorText
+								dictionarie={$selectedLanguage}
+								section="process"
+								key="card-two-title"
+								text="Tratamiento"
+							/>
+						</h3>
 					</div>
 					<p class="text-sm text-muted-foreground">
-						Hidrogenación, purificación y catalización para producir biocombustible de alta calidad.
+						<TranslatorText
+							dictionarie={$selectedLanguage}
+							section="process"
+							key="card-two-description"
+							text="Hidrogenación, purificación y catalización para producir biocombustible de alta calidad."
+						/>
 					</p>
 				</div>
 				<div
@@ -59,9 +97,23 @@
 				<div class="flex flex-col 2xl:w-[70%]">
 					<div class="flex space-x-2">
 						<Package color="#e06e40" />
-						<h3 class="font-medium">Distribución</h3>
+						<h3 class="font-medium">
+							<TranslatorText
+								dictionarie={$selectedLanguage}
+								section="process"
+								key="card-three-title"
+								text="Distribución"
+							/>
+						</h3>
 					</div>
-					<p class="text-sm text-muted-foreground">Envío del biocombustible al mercado global.</p>
+					<p class="text-sm text-muted-foreground">
+						<TranslatorText
+							dictionarie={$selectedLanguage}
+							section="process"
+							key="card-three-description"
+							text="Envío del biocombustible al mercado global."
+						/>
+					</p>
 				</div>
 				<div
 					class="max-sm:hidden text-sm border w-[30px] h-[30px] font-medium flex items-center justify-center text-center rounded-md bg-[#e06e40] text-white"
@@ -78,9 +130,23 @@
 				<div class="flex flex-col">
 					<div class="flex space-x-2">
 						<Package color="#e06e40" />
-						<h3 class="font-medium">Distribución</h3>
+						<h3 class="font-medium">
+							<TranslatorText
+								dictionarie={$selectedLanguage}
+								section="process"
+								key="card-three-title"
+								text="Distribución"
+							/>
+						</h3>
 					</div>
-					<p class="text-sm text-muted-foreground">Envío del biocombustible al mercado global.</p>
+					<p class="text-sm text-muted-foreground">
+						<TranslatorText
+							dictionarie={$selectedLanguage}
+							section="process"
+							key="card-three-description"
+							text="Envío del biocombustible al mercado global."
+						/>
+					</p>
 				</div>
 				<div
 					class="border w-[30px] h-[30px] font-medium flex items-center justify-center text-center rounded-md bg-[#e06e40] text-white"

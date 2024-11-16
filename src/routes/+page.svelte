@@ -11,7 +11,7 @@
 	import TranslatorText from '$lib/components/app/translatorText.svelte';
 	import { selectedLanguage } from '$lib/components/app/store';
 
-	let menu = $state(false);
+	let menu = $state(true);
 
 	function scrollToSection(selected: string) {
 		const section = document.getElementById(selected);
@@ -41,6 +41,9 @@
 		<Sheet.Root open={menu} onOpenChange={() => (menu = !menu)}>
 			<Sheet.Content side="left">
 				<MenuList {scrollToSection} />
+				<div class="w-full flex items-center justify-center">
+					<Translator />
+				</div>
 			</Sheet.Content>
 		</Sheet.Root>
 	</nav>
