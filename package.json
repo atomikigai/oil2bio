@@ -43,8 +43,5 @@
 		"@fontsource-variable/raleway": "^5.1.1",
 		"@fontsource/roboto": "^5.1.1",
 		"lucide-svelte": "^0.454.0"
-	},
-	"engines": {
-		"node": "22.x"
 	}
 }
