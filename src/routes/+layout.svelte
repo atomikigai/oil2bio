@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '@fontsource-variable/merriweather-sans';
+	import '@fontsource-variable/montserrat';
 
 	import '../app.css';
 	let { children } = $props();
