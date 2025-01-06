@@ -59,7 +59,7 @@
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
 						<div class="flex items-center space-x-1 text-sm font-bold">
-							<p>Aprender mas</p>
+							<p>Aprender más</p>
 							<Play size="16" />
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
 						<div class="flex items-center space-x-1 text-sm font-bold">
-							<p>Aprender mas</p>
+							<p>Aprender más</p>
 							<Play size="16" />
 						</div>
 					</div>
@@ -98,7 +98,7 @@
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
 						<div class="flex items-center space-x-1 text-sm font-bold">
-							<p>Aprender mas</p>
+							<p>Aprender más</p>
 							<Play size="16" />
 						</div>
 					</div>
