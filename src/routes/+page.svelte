@@ -1,29 +1,14 @@
 <script lang="ts">
-	import { ChartNoAxesCombined, Cpu, Link, Play, Sprout } from 'lucide-svelte';
-	import Market from './components/market.svelte';
-	import Process from './components/process.svelte';
-	import Finance from './components/finance.svelte';
-	import Investors from './components/investors.svelte';
-
+	import { ChartNoAxesCombined, Cpu, Link, Play, Sprout, Wallet } from 'lucide-svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Card from '$lib/components/ui/card/index.js';
 	import BeneficiosAmbientales from './components/beneficiosAmbientales.svelte';
 	import BeneficiosEconomicosConsumidor from './components/beneficiosEconomicosConsumidor.svelte';
 	import BeneficiosEconomicosEmpresas from './components/beneficiosEconomicosEmpresas.svelte';
-
-	let menu = $state(false);
-
-	function scrollToSection(selected: string) {
-		const section = document.getElementById(selected);
-		if (section) {
-			menu = false;
-			section.scrollIntoView({ behavior: 'smooth' });
-		}
-	}
 </script>
 
 <div class="w-full min-h-screen flex flex-col justify-center items-center">
-	<nav class="w-fit p-2 bg-white fixed top-0 right-10 mt-8 rounded-md">
+	<nav class="w-fit p-2 bg-white shadow-md border fixed top-0 right-10 mt-8 rounded-md">
 		<Button variant="ghost" class="font-bold">Sobre nosotros</Button>
 		<Button variant="ghost" class="font-bold">Proyecto</Button>
 		<Button variant="ghost" class="font-bold">Inversores</Button>
@@ -32,31 +17,32 @@
 	</nav>
 
 	<div
-		class="h-[140vh] bg-cover text-center flex justify-center items-center flex-col w-full bg-[url('/new20.webp')]"
+		class="h-[140vh] bg-cover text-center flex justify-center items-center flex-col w-full"
 		id="home"
 	>
-		<h3 class="uppercase text-[3rem] font-extrabold text-white">
+		<h3 class="uppercase text-[3rem] font-extrabold">
 			Transformamos residuos <br /> en energía limpia
 		</h3>
 
-		<p class="text-xl text-white">
+		<p class="text-xl">
 			Convertimos residuos petroleros en biocombustibles sostenibles. <br /> Ofrecemos soluciones
 			innovadoras y rentables a empresas en Arabia Saudita y Kuwait, <br /> contribuyendo a un futuro
 			más limpio y sostenible para la industria.
 		</p>
 
-		<div class="mt-4 rounded-lg w-[60rem] h-[30rem] bg-white bg-opacity-50"></div>
+		<div class="flex justify-center items-center mt-4 rounded-lg w-[60rem] h-[30rem] bg-black">
+			<Play color="#fff" size={50} />
+		</div>
 
 		<div class="my-12 space-x-4 flex items-center">
-			<Button class="font-bold text-xl p-6 bg-white text-black hover:bg-white">
-				<Link class="mr-2" />
+			<Button variant="outline" class="font-bold text-xl p-6  border-dashed border-2 ">
+				<Wallet class="mr-2" />
 				Invierte con nosotros</Button
 			>
-			<Button variant="default" class="font-bold text-xl p-6">Sobre nosotros</Button>
 		</div>
 
 		<div class="flex flex-row space-x-4">
-			<Card.Root class="w-[450px] bg-[#fff]  border-none">
+			<Card.Root class="w-[450px] bg-[#fff]">
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
 						<div class="flex items-center space-x-1 text-sm font-bold">
@@ -75,7 +61,7 @@
 				</Card.Content>
 			</Card.Root>
 
-			<Card.Root class="w-[450px] bg-[#fff]  border-none">
+			<Card.Root class="w-[450px] bg-[#fff]">
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
 						<div class="flex items-center space-x-1 text-sm font-bold">
@@ -95,7 +81,7 @@
 				</Card.Content>
 			</Card.Root>
 
-			<Card.Root class="w-[450px] bg-[#fff]  border-none">
+			<Card.Root class="w-[450px] bg-[#fff]">
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
 						<div class="flex items-center space-x-1 text-sm font-bold">

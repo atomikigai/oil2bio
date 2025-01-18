@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import { Landmark, Sprout, UsersRound } from 'lucide-svelte';
+	import { Building2, Landmark, Sprout, UsersRound } from 'lucide-svelte';
 
 	let items = $state({
 		one: true,
@@ -39,7 +39,7 @@
 	<div class="w-full flex flex-col">
 		<div class="flex flex-row space-x-4">
 			<div class="bg-[#72c488] rounded-md p-2 flex items-center justify-center">
-				<UsersRound size={20} color="#fff" />
+				<Building2 size={20} color="#fff" />
 			</div>
 			<h3 class="text-4xl font-bold">Beneficios Económicos para Empresas</h3>
 		</div>
