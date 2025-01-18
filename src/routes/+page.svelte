@@ -5,6 +5,7 @@
 		CircleArrowDown,
 		Cpu,
 		Droplet,
+		Link,
 		Menu,
 		Play,
 		Sprout
@@ -35,8 +36,10 @@
 
 <div class="w-full min-h-screen flex flex-col justify-center items-center">
 	<nav class="w-fit p-2 bg-white fixed top-0 right-10 mt-8 rounded-md">
-		<Button variant="ghost" class="font-bold">Demo</Button>
-		<Button variant="ghost" class="font-bold">Productos</Button>
+		<Button variant="ghost" class="font-bold">Sobre nosotros</Button>
+		<Button variant="ghost" class="font-bold">Proyecto</Button>
+		<Button variant="ghost" class="font-bold">Inversores</Button>
+		<Button variant="ghost" class="font-bold">Noticias</Button>
 		<Button variant="default" class="font-bold">Contacto</Button>
 	</nav>
 
@@ -54,7 +57,17 @@
 			más limpio y sostenible para la industria.
 		</p>
 
-		<div class="flex flex-row mt-[10%] space-x-4">
+		<div class="mt-4 rounded-lg w-[60rem] h-[30rem] bg-white bg-opacity-50"></div>
+
+		<div class="my-12 space-x-4 flex items-center">
+			<Button class="font-bold text-xl p-6 bg-white text-black hover:bg-white">
+				<Link class="mr-2" />
+				Invierte con nosotros</Button
+			>
+			<Button variant="default" class="font-bold text-xl p-6">Sobre nosotros</Button>
+		</div>
+
+		<div class="flex flex-row space-x-4">
 			<Card.Root class="w-[450px] bg-[#fff]  border-none">
 				<Card.Content>
 					<div class="w-full flex justify-end mb-4">
