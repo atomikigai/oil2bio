@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Button } from '$lib/components/ui/button';
 	import * as Tabs from '$lib/components/ui/tabs/index.js';
 	import { Sprout } from 'lucide-svelte';
 
@@ -7,6 +8,32 @@
 		two: false,
 		three: false
 	});
+
+	function handleShow(item: string) {
+		if (item === 'one') {
+			items = {
+				one: true,
+				two: false,
+				three: false
+			};
+		}
+
+		if (item === 'two') {
+			items = {
+				one: false,
+				two: true,
+				three: false
+			};
+		}
+
+		if (item === 'three') {
+			items = {
+				one: false,
+				two: false,
+				three: true
+			};
+		}
+	}
 </script>
 
 <div class="p-12">
@@ -23,38 +50,56 @@
 	</div>
 
 	<div class="flex flex-row space-x-4">
-		<div class="flex flex-col items-start p-6 !shadow-none border-t rounded-none">
-			<p class="font-bold text-lg">Reducción de emisiones</p>
-			<p>Fin uses all of your support knowledge to generate.</p>
-		</div>
-		<div class="px-4">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa reprehenderit
-			cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius doloremque vel? Minima
-			beatae culpa nobis illo.
-		</div>
-	</div>
+		<div class="flex flex-col w-[30%]">
+			<Button
+				onclick={() => handleShow('one')}
+				class="h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+			>
+				<p class="font-bold text-lg">Reducción de emisiones</p>
+				<p>Fin uses all of your support knowledge to generate.</p>
+			</Button>
 
-	<div class="flex flex-row space-x-4">
-		<div class="flex flex-col items-start p-6 !shadow-none border-t rounded-none">
-			<p class="font-bold text-lg">Gestión eficiente de residuos</p>
-			<p>Fin uses all of your support knowledge to generate.</p>
-		</div>
-		<div class="px-4">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa reprehenderit
-			cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius doloremque vel? Minima
-			beatae culpa nobis illo.
-		</div>
-	</div>
+			<Button
+				onclick={() => handleShow('two')}
+				class="h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+			>
+				<p class="font-bold text-lg">Gestión eficiente de residuos</p>
+				<p>Fin uses all of your support knowledge to generate.</p>
+			</Button>
 
-	<div class="flex flex-row space-x-4">
-		<div class="flex flex-col items-start p-6 !shadow-none border-t border-b rounded-none">
-			<p class="font-bold text-lg">Fomento de la economía circular</p>
-			<p>Fin uses all of your support knowledge to generate.</p>
+			<Button
+				onclick={() => handleShow('three')}
+				class="h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+			>
+				<p class="font-bold text-lg">Fomento de la economía circular</p>
+				<p>Fin uses all of your support knowledge to generate.</p>
+			</Button>
 		</div>
-		<div class="px-4">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa reprehenderit
-			cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius doloremque vel? Minima
-			beatae culpa nobis illo.
+
+		<div class="w-[70%]">
+			{#if items.one}
+				<div class="px-4">
+					One- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+					reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+					doloremque vel? Minima beatae culpa nobis illo.
+				</div>
+			{/if}
+
+			{#if items.two}
+				<div class="px-4">
+					two - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+					reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+					doloremque vel? Minima beatae culpa nobis illo.
+				</div>
+			{/if}
+
+			{#if items.three}
+				<div class="px-4">
+					trhee - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+					reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+					doloremque vel? Minima beatae culpa nobis illo.
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>
