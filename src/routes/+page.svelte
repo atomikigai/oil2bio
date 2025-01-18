@@ -1,27 +1,15 @@
 <script lang="ts">
-	import {
-		ChartNoAxesCombined,
-		ChevronRight,
-		CircleArrowDown,
-		Cpu,
-		Droplet,
-		Link,
-		Menu,
-		Play,
-		Sprout
-	} from 'lucide-svelte';
-	import About from './components/about.svelte';
+	import { ChartNoAxesCombined, Cpu, Link, Play, Sprout } from 'lucide-svelte';
 	import Market from './components/market.svelte';
 	import Process from './components/process.svelte';
 	import Finance from './components/finance.svelte';
 	import Investors from './components/investors.svelte';
-	import * as Sheet from '$lib/components/ui/sheet';
-	import MenuList from './components/menu-list.svelte';
-	import Translator from '$lib/components/app/translator.svelte';
-	import TranslatorText from '$lib/components/app/translatorText.svelte';
-	import { selectedLanguage } from '$lib/components/app/store';
+
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Card from '$lib/components/ui/card/index.js';
+	import BeneficiosAmbientales from './components/beneficiosAmbientales.svelte';
+	import BeneficiosEconomicosConsumidor from './components/beneficiosEconomicosConsumidor.svelte';
+	import BeneficiosEconomicosEmpresas from './components/beneficiosEconomicosEmpresas.svelte';
 
 	let menu = $state(false);
 
@@ -128,13 +116,9 @@
 		</div>
 	</div>
 
-	<About />
+	<BeneficiosAmbientales />
 
-	<Market />
+	<BeneficiosEconomicosEmpresas />
 
-	<Process />
-
-	<Finance />
-
-	<Investors />
+	<BeneficiosEconomicosConsumidor />
 </div>

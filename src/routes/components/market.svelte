@@ -1,128 +1,115 @@
-<script>
-	import { selectedLanguage } from '$lib/components/app/store';
-	import TranslatorText from '$lib/components/app/translatorText.svelte';
-	import * as Card from '$lib/components/ui/card';
-	import { Boxes, ChartColumnIncreasing, PackageOpen } from 'lucide-svelte';
+<script lang="ts">
+	import { Button } from '$lib/components/ui/button';
+	import * as Tabs from '$lib/components/ui/tabs/index.js';
+	import { Landmark, Sprout, UsersRound } from 'lucide-svelte';
+
+	let items = $state({
+		one: true,
+		two: false,
+		three: false
+	});
+
+	function handleShow(item: string) {
+		if (item === 'one') {
+			items = {
+				one: true,
+				two: false,
+				three: false
+			};
+		}
+
+		if (item === 'two') {
+			items = {
+				one: false,
+				two: true,
+				three: false
+			};
+		}
+
+		if (item === 'three') {
+			items = {
+				one: false,
+				two: false,
+				three: true
+			};
+		}
+	}
 </script>
 
-<div
-	class="w-full min-h-screen justify-center flex flex-col px-4 space-y-12 relative items-center"
-	id="market"
->
-	<h3 class="text-center 2xl:text-4xl text-2xl font-extrabold uppercase w-full">
-		<TranslatorText
-			dictionarie={$selectedLanguage}
-			section="market"
-			key="title"
-			text="Analisis de mercado"
-		/>
-	</h3>
-
-	<Card.Root class="shadow-none 2xl:w-1/3  ">
-		<Card.Content class="flex justify-between items-center">
-			<div>
-				<div class="text-lg font-medium flex items-center space-x-2">
-					<div class="bg-[#e06e40] p-2 rounded-md">
-						<ChartColumnIncreasing color="#fff" size={18} />
-					</div>
-					<p>
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="market"
-							key="card-one-title"
-							text="Crecimiento Global "
-						/>
-					</p>
-				</div>
-				<p class="text-muted-foreground text-sm mt-2">
-					<TranslatorText
-						dictionarie={$selectedLanguage}
-						section="market"
-						key="card-one-description"
-						text="El mercado de biocombustibles alcanzará $154,000 millones USD en 2026, con crecimiento
-					anual del 5.2%."
-					/>
-				</p>
+<div class="p-[12rem]">
+	<div class="bg-white rounded-md p-12">
+		<div class="my-4">
+			<div class="text-4xl font-bold flex items-center">
+				<UsersRound size={50} class="mr-4" />
+				<h3>Beneficios Económicos para Consumidores</h3>
 			</div>
-		</Card.Content>
-	</Card.Root>
+			<p class="text-muted-foreground mt-2">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt quos temporibus earum
+				nostrum facere consequatur, ipsum tenetur eaque eos cum voluptatum voluptatibus cupiditate
+				saepe labore quasi ex ipsam ipsa.
+			</p>
+		</div>
 
-	<!-- <TrendingDown class="absolute top-[20rem] left-[24rem] rotate-45" size={48} />
-		<Shuffle class="absolute top-[14rem] right-[38rem] rotate-180" size={42} /> -->
-
-	<Card.Root class="shadow-none 2xl:w-1/3">
-		<Card.Content class="flex justify-between items-center">
-			<div>
-				<div class="text-lg font-medium flex items-center space-x-2">
-					<div class="bg-[#4ea971] p-2 rounded-md">
-						<Boxes color="#fff" size={18} />
+		<div class="flex flex-col">
+			<div class="w-[70%] h-[70vh]">
+				{#if items.one}
+					<div>
+						One- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+						reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+						doloremque vel? Minima beatae culpa nobis illo.
 					</div>
-					<p>
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="market"
-							key="card-two-title"
-							text="Alianzas Estratégicas"
-						/>
-					</p>
-				</div>
-				<p class="text-muted-foreground text-sm mt-2">
-					<TranslatorText
-						dictionarie={$selectedLanguage}
-						section="market"
-						key="card-two-description"
-						text="Colaboración con Saudi Aramco y Kuwait Oil Company para procesar millones de toneladas de
-					residuos."
-					/>
-				</p>
-			</div>
-		</Card.Content>
-	</Card.Root>
+				{/if}
 
-	<!-- <TrendingUp class="absolute top-[18rem] right-[30rem] rotate-0" size={48} /> -->
-
-	<Card.Root class="shadow-none 2xl:w-1/3">
-		<Card.Content class="flex justify-between items-center">
-			<div>
-				<div class="text-lg font-medium flex items-center space-x-2">
-					<div class="bg-[#6277fd] p-2 rounded-md">
-						<PackageOpen color="#fff" size={18} />
+				{#if items.two}
+					<div>
+						two - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+						reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+						doloremque vel? Minima beatae culpa nobis illo.
 					</div>
-					<p>
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="market"
-							key="card-three-title"
-							text="Volumen de Residuos"
-						/>
-					</p>
-				</div>
-				<p class="text-muted-foreground text-sm mt-2">
-					<TranslatorText
-						dictionarie={$selectedLanguage}
-						section="market"
-						key="card-three-description"
-						text="Arabia Saudita genera 2 millones de toneladas anuales, Kuwait 850,000 toneladas."
-					/>
-				</p>
-			</div>
-		</Card.Content>
-	</Card.Root>
+				{/if}
 
-	<!-- <Card.Root class="shadow-none w-1/3 h-[8rem]">
-		<Card.Content class="flex justify-between items-center">
-			<div>
-				<div class="text-lg font-medium flex items-center space-x-2">
-					<div class="bg-[#4ea971] p-2 rounded-md">
-						<ChartColumnIncreasing color="#fff" size={12} />
+				{#if items.three}
+					<div>
+						trhee - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+						reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+						doloremque vel? Minima beatae culpa nobis illo.
 					</div>
-					<p>Crecimiento Global</p>
-				</div>
-				<p class="text-muted-foreground text-sm mt-2">
-					El mercado de biocombustibles alcanzará $154,000 millones USD en 2026, con crecimiento
-					anual del 5.2%.
-				</p>
+				{/if}
 			</div>
-		</Card.Content>
-	</Card.Root> -->
+
+			<div class="flex flex-row space-x-8">
+				<Button
+					onclick={() => handleShow('one')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				>
+					<p class="font-bold text-lg">Ahorro en gestión de residuos</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
+
+				<Button
+					onclick={() => handleShow('two')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				>
+					<p class="font-bold text-lg">Ingresos adicionales</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
+
+				<Button
+					onclick={() => handleShow('three')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				>
+					<p class="font-bold text-lg">Obtención de créditos de carbono</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
+
+				<Button
+					onclick={() => handleShow('three')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				>
+					<p class="font-bold text-lg">Mayor competitividad</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
+			</div>
+		</div>
+	</div>
 </div>

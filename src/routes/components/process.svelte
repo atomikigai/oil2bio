@@ -1,159 +1,115 @@
-<script>
-	import { selectedLanguage } from '$lib/components/app/store';
-	import TranslatorText from '$lib/components/app/translatorText.svelte';
-	import * as Card from '$lib/components/ui/card';
-	import { Factory, Package, Warehouse } from 'lucide-svelte';
+<script lang="ts">
+	import { Button } from '$lib/components/ui/button';
+	import * as Tabs from '$lib/components/ui/tabs/index.js';
+	import { Landmark, Sprout, UsersRound } from 'lucide-svelte';
+
+	let items = $state({
+		one: true,
+		two: false,
+		three: false
+	});
+
+	function handleShow(item: string) {
+		if (item === 'one') {
+			items = {
+				one: true,
+				two: false,
+				three: false
+			};
+		}
+
+		if (item === 'two') {
+			items = {
+				one: false,
+				two: true,
+				three: false
+			};
+		}
+
+		if (item === 'three') {
+			items = {
+				one: false,
+				two: false,
+				three: true
+			};
+		}
+	}
 </script>
 
-<div
-	class="w-full h-screen 2xl:space-x-2 flex flex-col justify-center 2xl:px-12 2xl:space-y-12 px-4"
-	id="process"
->
-	<div>
-		<h3 class="2xl:text-4xl text-2xl font-extrabold text-center">
-			<TranslatorText
-				dictionarie={$selectedLanguage}
-				section="process"
-				key="title"
-				text="Proceso de Conversión"
-			/>
-		</h3>
-		<p class=" mt-2 text-muted-foreground text-center max-sm:mb-4">
-			<TranslatorText
-				dictionarie={$selectedLanguage}
-				section="process"
-				key="description"
-				text="El proceso de conversión de residuos en biocombustible consta de tres etapas principales."
-			/>
-		</p>
-	</div>
+<div class="p-[12rem]">
+	<div class=" p-12">
+		<div class="my-4">
+			<div class="text-4xl font-bold flex items-center">
+				<UsersRound size={50} class="mr-4" />
+				<h3>Beneficios Económicos para Consumidores</h3>
+			</div>
+			<p class="text-muted-foreground mt-2">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt quos temporibus earum
+				nostrum facere consequatur, ipsum tenetur eaque eos cum voluptatum voluptatibus cupiditate
+				saepe labore quasi ex ipsam ipsa.
+			</p>
+		</div>
 
-	<div class="flex 2xl:flex-row flex-col 2xl:space-x-4 max-sm:space-y-4 w-full justify-center">
-		<Card.Root class="2xl:w-[32rem] w-full shadow-none">
-			<Card.Content class="flex justify-between items-center">
-				<div class="flex flex-col 2xl:w-[70%]">
-					<div class="flex space-x-2">
-						<Warehouse color="#4ea971" />
-						<h3 class="font-medium">
-							<TranslatorText
-								dictionarie={$selectedLanguage}
-								section="process"
-								key="card-one-title"
-								text="Recolección"
-							/>
-						</h3>
-					</div>
-					<p class="text-sm text-muted-foreground">
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="process"
-							key="card-one-description"
-							text="Recogida de residuos de refinerías en Arabia Saudita y Kuwait."
-						/>
-					</p>
-				</div>
-
-				<div
-					class="max-sm:hidden border w-[30px] h-[30px] font-medium flex items-center justify-center text-center rounded-md bg-[#4ea971] text-white"
+		<div class="flex flex-col">
+			<div class="flex flex-row space-x-8">
+				<Button
+					onclick={() => handleShow('one')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 				>
-					1
-				</div>
-			</Card.Content>
-		</Card.Root>
+					<p class="font-bold text-lg">Ahorro en gestión de residuos</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
 
-		<Card.Root class="2xl:w-[32rem] w-full shadow-none">
-			<Card.Content class="flex flex-row items-center justify-between">
-				<div class="flex flex-col 2xl:w-[70%]">
-					<div class="flex space-x-2">
-						<Factory color="#6277fd" />
-						<h3 class="font-medium">
-							<TranslatorText
-								dictionarie={$selectedLanguage}
-								section="process"
-								key="card-two-title"
-								text="Tratamiento"
-							/>
-						</h3>
-					</div>
-					<p class="text-sm text-muted-foreground">
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="process"
-							key="card-two-description"
-							text="Hidrogenación, purificación y catalización para producir biocombustible de alta calidad."
-						/>
-					</p>
-				</div>
-				<div
-					class="max-sm:hidden border w-[30px] h-[30px] font-medium flex items-center justify-center text-center rounded-md bg-[#6277fd] text-white"
+				<Button
+					onclick={() => handleShow('two')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 				>
-					2
-				</div>
-			</Card.Content>
-		</Card.Root>
+					<p class="font-bold text-lg">Ingresos adicionales</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
 
-		<Card.Root class="w-full 2xl:hidden flex shadow-none">
-			<Card.Content class="flex flex-row items-center justify-between">
-				<div class="flex flex-col 2xl:w-[70%]">
-					<div class="flex space-x-2">
-						<Package color="#e06e40" />
-						<h3 class="font-medium">
-							<TranslatorText
-								dictionarie={$selectedLanguage}
-								section="process"
-								key="card-three-title"
-								text="Distribución"
-							/>
-						</h3>
-					</div>
-					<p class="text-sm text-muted-foreground">
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="process"
-							key="card-three-description"
-							text="Envío del biocombustible al mercado global."
-						/>
-					</p>
-				</div>
-				<div
-					class="max-sm:hidden text-sm border w-[30px] h-[30px] font-medium flex items-center justify-center text-center rounded-md bg-[#e06e40] text-white"
+				<Button
+					onclick={() => handleShow('three')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 				>
-					3
-				</div>
-			</Card.Content>
-		</Card.Root>
-	</div>
+					<p class="font-bold text-lg">Obtención de créditos de carbono</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
 
-	<div class="w-full justify-center 2xl:flex hidden">
-		<Card.Root class="w-1/4  shadow-none">
-			<Card.Content class="flex flex-row items-center justify-between">
-				<div class="flex flex-col">
-					<div class="flex space-x-2">
-						<Package color="#e06e40" />
-						<h3 class="font-medium">
-							<TranslatorText
-								dictionarie={$selectedLanguage}
-								section="process"
-								key="card-three-title"
-								text="Distribución"
-							/>
-						</h3>
-					</div>
-					<p class="text-sm text-muted-foreground">
-						<TranslatorText
-							dictionarie={$selectedLanguage}
-							section="process"
-							key="card-three-description"
-							text="Envío del biocombustible al mercado global."
-						/>
-					</p>
-				</div>
-				<div
-					class="border w-[30px] h-[30px] font-medium flex items-center justify-center text-center rounded-md bg-[#e06e40] text-white"
+				<Button
+					onclick={() => handleShow('three')}
+					class="w-full h-[8rem] bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 				>
-					3
-				</div>
-			</Card.Content>
-		</Card.Root>
+					<p class="font-bold text-lg">Mayor competitividad</p>
+					<p>Fin uses all of your support knowledge to generate.</p>
+				</Button>
+			</div>
+
+			<div class="w-[70%] h-[70vh]">
+				{#if items.one}
+					<div>
+						One- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+						reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+						doloremque vel? Minima beatae culpa nobis illo.
+					</div>
+				{/if}
+
+				{#if items.two}
+					<div>
+						two - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+						reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+						doloremque vel? Minima beatae culpa nobis illo.
+					</div>
+				{/if}
+
+				{#if items.three}
+					<div>
+						trhee - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
+						reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
+						doloremque vel? Minima beatae culpa nobis illo.
+					</div>
+				{/if}
+			</div>
+		</div>
 	</div>
 </div>
