@@ -72,6 +72,6 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat Variable', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 }

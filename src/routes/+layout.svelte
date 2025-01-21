@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '@fontsource-variable/montserrat';
+	import '@fontsource/roboto';
 
 	import '../app.css';
 	let { children } = $props();

@@ -36,12 +36,9 @@
 	}
 </script>
 
-<div class="h-[70vh] w-full flex justify-center items-center flex-col px-[12rem]">
+<div class="h-screen w-full flex justify-center items-center flex-col px-[12rem]">
 	<div class="bg-white rounded-md mb-4">
 		<div class="text-4xl font-bold flex items-center space-x-4">
-			<div class="p-2 bg-[#72c488] rounded-md">
-				<Sprout color="#fff" size={20} />
-			</div>
 			<div class="flex items-center space-x-4">
 				<h3>Beneficios ambientales</h3>
 			</div>

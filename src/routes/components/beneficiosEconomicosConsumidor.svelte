@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import { Landmark, Sprout, UsersRound } from 'lucide-svelte';
+	import { BadgeCheck, Boxes, Landmark, Sprout, UsersRound } from 'lucide-svelte';
 
 	let items = $state({
 		one: true,
@@ -35,25 +35,24 @@
 	}
 </script>
 
-<div class="w-full flex flex-col justify-center items-center px-[12rem]">
-	<div class="w-full flex flex-col">
-		<div class="flex flex-row space-x-4">
-			<div class="bg-[#72c488] rounded-md p-2 flex items-center justify-center">
-				<UsersRound size={20} color="#fff" />
+<div class=" h-screen w-full flex justify-center items-center flex-col px-[12rem]">
+	<div class="bg-white rounded-md mb-4">
+		<div class="text-4xl font-bold flex items-center space-x-4">
+			<div class="flex items-center space-x-4">
+				<h3>Beneficios Económicos para Consumidores</h3>
 			</div>
-			<h3 class="text-4xl font-bold">Beneficios Económicos para Consumidores</h3>
 		</div>
-		<p class="text-muted-foreground mt-2">
+		<p class="text-muted-foreground">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt quos temporibus earum
 			nostrum facere consequatur, ipsum tenetur eaque eos cum voluptatum voluptatibus cupiditate
 			saepe labore quasi ex ipsam ipsa.
 		</p>
 	</div>
 
-	<div class="flex flex-col w-full mt-6">
-		<div class="min-h-[70vh]">
+	<div class="flex flex-row space-x-4">
+		<div class="w-[70%]">
 			{#if items.one}
-				<div>
+				<div class="px-4">
 					One- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
 					reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
 					doloremque vel? Minima beatae culpa nobis illo.
@@ -61,7 +60,7 @@
 			{/if}
 
 			{#if items.two}
-				<div>
+				<div class="px-4">
 					two - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
 					reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
 					doloremque vel? Minima beatae culpa nobis illo.
@@ -69,7 +68,7 @@
 			{/if}
 
 			{#if items.three}
-				<div>
+				<div class="px-4">
 					trhee - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ullam error ipsa
 					reprehenderit cum dolores amet dolore, numquam ut sapiente voluptatem explicabo eius
 					doloremque vel? Minima beatae culpa nobis illo.
@@ -77,29 +76,50 @@
 			{/if}
 		</div>
 
-		<div class="flex flex-row justify-between">
+		<div class="flex flex-col w-[30%]">
 			<Button
 				onclick={() => handleShow('one')}
-				class="w-[32%] h-[6rem] hover:border-t-2 hover:border-black bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				class="h-[8rem] hover:border-t-2 hover:border-b-2 hover:border-black bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 			>
-				<p class="font-bold text-lg">Combustibles más económicos</p>
-				<p class="text-xs">Fin uses all of your support knowledge to generate.</p>
+				<div class="flex items-center space-x-4">
+					<div class="p-2 bg-[#72c488] rounded-full">
+						<BadgeCheck color="#fff" size={24} />
+					</div>
+					<div class="flex flex-col items-start">
+						<p class="font-bold text-lg">Combustibles más económicos</p>
+						<p>Fin uses all of your support knowledge to generate.</p>
+					</div>
+				</div>
 			</Button>
 
 			<Button
 				onclick={() => handleShow('two')}
-				class="w-[32%] h-[6rem] hover:border-t-2 hover:border-black bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				class="h-[8rem] hover:border-t-2 hover:border-b-2 hover:border-black bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 			>
-				<p class="font-bold text-lg">Acceso a energías limpias</p>
-				<p class="text-xs">Fin uses all of your support knowledge to generate.</p>
+				<div class="flex items-center space-x-4">
+					<div class="p-2 bg-[#72c488] rounded-full">
+						<Boxes color="#fff" size={24} />
+					</div>
+					<div class="flex flex-col items-start">
+						<p class="font-bold text-lg">Acceso a energías limpias</p>
+						<p>Fin uses all of your support knowledge to generate.</p>
+					</div>
+				</div>
 			</Button>
 
 			<Button
 				onclick={() => handleShow('three')}
-				class="w-[32%] h-[6rem] hover:border-t-2 hover:border-black bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
+				class="h-[8rem] hover:border-t-2 hover:border-b-2 hover:border-black bg-transparent text-black  hover:bg-transparent flex flex-col items-start !shadow-none border-t rounded-none cursor-pointer"
 			>
-				<p class="font-bold text-lg">Estimación del mercado local</p>
-				<p class="text-xs">Fin uses all of your support knowledge to generate.</p>
+				<div class="flex items-center space-x-4">
+					<div class="p-2 bg-[#72c488] rounded-full">
+						<Landmark color="#fff" size={24} />
+					</div>
+					<div class="flex flex-col items-start">
+						<p class="font-bold text-lg">Estimación del mercado local</p>
+						<p>Fin uses all of your support knowledge to generate.</p>
+					</div>
+				</div>
 			</Button>
 		</div>
 	</div>

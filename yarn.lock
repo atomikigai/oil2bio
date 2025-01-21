@@ -211,26 +211,6 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.9.tgz#50dea3616bc8191fb8e112283b49eaff03e78429"
   integrity sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==
 
-"@fontsource-variable/jetbrains-mono@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/jetbrains-mono/-/jetbrains-mono-5.1.2.tgz#abe108f0b7d7942bbe6ffbd907d85d27f694e7b8"
-  integrity sha512-syGEJ/N4FFisAXegxtbe1etYpo2T630dqCbYufPf7Dli/hMKSoSUIm3wK4q5RsGFRxWno1WecfnsgZA1jRK0EQ==
-
-"@fontsource-variable/merriweather-sans@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/merriweather-sans/-/merriweather-sans-5.1.1.tgz#3396379bcde16fee80f96770e0c8d078b323ad62"
-  integrity sha512-nX5LijPOlAxYQZQBT5GT+tvSKFAdplm8YbidLUy5IKK0EaJapMiZHWzDexwCMkTjzI15ywvYNpR97JO7XkQ6vw==
-
-"@fontsource-variable/montserrat@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/montserrat/-/montserrat-5.1.1.tgz#908185f4b17afeec8532301ed0991989dd341506"
-  integrity sha512-eHmSruS3B+4wVaHk6ShNUJj1MbWEohOuriwN/oYR2VY8jRS83a5SKQeG1wu4Eku3v3f5cXTIbfd1tHeQ7GXkiA==
-
-"@fontsource-variable/raleway@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/raleway/-/raleway-5.1.1.tgz#2f3f2648d5c908afc00a38d614e8100fdccee6b0"
-  integrity sha512-PWApLoy2/nmrU+1KjtbEAB3kZFbb/kevzkAS57Pt9TAf3OybfCPpdevlT2hQI9lQEclYHMWXEHBL6vP7MNmjMg==
-
 "@fontsource/roboto@^5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-5.1.1.tgz#64b3f819baf8d3bcfb48c0437ddc7e4118a6ab14"
