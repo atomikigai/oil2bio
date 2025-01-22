@@ -70,8 +70,20 @@
     @apply border-border;
   }
 
-  body {
+
+  body,
+  h1,
+  h2,
+  h3 {
     @apply bg-background text-foreground;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  p,
+  a,
+  nav {
+    font-family: 'Open Sans Variable', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
+ */
   }
 }
