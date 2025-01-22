@@ -71,12 +71,16 @@
   }
 
 
+  body {
+    @apply bg-background text-foreground;
+  }
+
   body,
   h1,
   h2,
   h3 {
-    @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
+
   }
 
   p,
