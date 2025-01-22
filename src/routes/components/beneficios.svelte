@@ -1,54 +1,65 @@
-<section class="py-12 px-8 bg-white text-center">
-	<h2 class="text-3xl font-bold mb-6">Beneficios Ambientales</h2>
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-		<div class="p-4 bg-lime-600 rounded-md">
-			<h3 class="text-xl font-semibold">🌍 Reducción de emisiones</h3>
-			<p>Mitigamos el cambio climático al reducir las emisiones de gases de efecto invernadero.</p>
+<section class="w-full h-screen flex justify-center items-center flex-col">
+	<h3 class="w-[80%] my-6 text-2xl uppercase font-bold">Beneficios ambientales</h3>
+
+	<div class="flex flex-row w-[80%] justify-center items-center space-x-12">
+		<div
+			class="bg-[url('/b-one.jpg')] text-white bg-cover border w-full rounded-xl h-[40rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl"
+		>
+			<h3>Reducción de emisiones</h3>
 		</div>
-		<div>
-			<h3 class="text-xl font-semibold">🗑️ Gestión eficiente de residuos</h3>
-			<p>Transformamos residuos en energía, evitando la acumulación en vertederos.</p>
+		<div
+			class="bg-[url('/b-two.jpg')] text-white bg-cover border w-full rounded-xl h-[40rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl"
+		>
+			Gestión eficiente de residuos
 		</div>
-		<div>
-			<h3 class="text-xl font-semibold">♻️ Economía circular</h3>
-			<p>Promovemos el reciclaje y la reutilización de recursos.</p>
+		<div
+			class="bg-[url('/b-three.jpg')] text-white bg-cover border w-full rounded-xl h-[40rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl"
+		>
+			Fomento de la economía circular
 		</div>
 	</div>
 </section>
 
-<section class="py-12 px-8 bg-gray-100 text-center">
-	<h2 class="text-3xl font-bold mb-6">Beneficios Económicos</h2>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-		<div>
-			<h3 class="text-xl font-semibold">Para Empresas</h3>
-			<ul>
-				<li>Ahorro en gestión de residuos</li>
-				<li>Ingresos adicionales</li>
-				<li>Créditos de carbono</li>
-			</ul>
-		</div>
-		<div>
-			<h3 class="text-xl font-semibold">Para Consumidores</h3>
-			<ul>
-				<li>Combustibles más económicos</li>
-				<li>Acceso a energías limpias</li>
-			</ul>
-		</div>
+<section class="py-12 w-full h-screen flex justify-center items-center flex-wrap">
+	<div
+		class="bg-[url('/i-one.jpg')] text-white bg-cover hover:border-2 hover:shadow-sm bg-center font-bold border w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col"
+	>
+		<h3>Innovación y tecnología</h3>
 	</div>
-</section>
+	<div
+		class="border w-[20%] rounded-xl h-[20rem] hover:border-2 hover:shadow-sm flex justify-center items-center flex-col ml-6"
+	>
+		Liderazgo tecnológico
+	</div>
+	<div
+		class="font-bold bg-[url('/i-two.jpg')] text-white bg-cover bg-center hover:border-2 hover:shadow-sm w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col ml-6"
+	>
+		Beneficios Sociales y para la Salud Pública
+	</div>
+	<div
+		class="border w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col ml-6 hover:border-2 hover:shadow-sm"
+	>
+		Reducción de riesgos ambientales
+	</div>
+	<div
+		class=" border w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col hover:border-2 hover:shadow-sm"
+	>
+		Fomento de la investigación y desarrollo
+	</div>
 
-<!-- Innovación y Tecnología -->
-<section class="py-12 px-8 bg-white text-center">
-	<h2 class="text-3xl font-bold mb-6">Innovación y Tecnología</h2>
-	<p class="mb-4">Lideramos el desarrollo de tecnologías limpias y sostenibles.</p>
-	<img src="/path-to-innovation-image.jpg" alt="Innovación" class="mx-auto" />
-</section>
-
-<!-- Sostenibilidad y Futuro -->
-<section class="py-12 px-8 bg-gray-100 text-center">
-	<h2 class="text-3xl font-bold mb-6">Sostenibilidad y Futuro</h2>
-	<p>
-		Construimos un futuro donde la energía limpia y la sostenibilidad son el centro del progreso.
-	</p>
-	<button class="mt-6 bg-lime-600 px-6 py-3 rounded text-white font-bold"> Conoce más </button>
+	<div
+		class="font-bold bg-[url('/i-three.jpg')] text-white bg-cover bg-center border w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col ml-6 hover:border-2 hover:shadow-sm"
+	>
+		Seguridad energética
+	</div>
+	<div
+		class="border w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col ml-6 hover:border-2 hover:shadow-sm"
+	>
+		Creación de empleos
+	</div>
+	<div
+		class="text-white font-bold bg-[url('/i-four.jpg')] bg-cover bg-center border w-[20%] rounded-xl h-[20rem] flex justify-center items-center flex-col ml-6 hover:border-2 hover:shadow-sm"
+	>
+		Sostenibilidad y Futuro
+	</div>
 </section>
