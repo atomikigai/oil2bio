@@ -26,54 +26,54 @@
 		class="lg:w-[50%] w-full h-full flex justify-center max-sm:flex-wrap items-center lg:space-x-6"
 	>
 		<div
-			class="relative lg:w-[12rem] lg:h-[12rem] w-[11rem] h-[11rem] border-2 border-t-lime-600 border-l-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center max-sm:mr-4"
+			class="relative lg:w-[12rem] lg:h-[12rem] w-[8rem] h-[8rem] max-sm:text-sm border-2 border-t-lime-600 border-l-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center max-sm:mr-4"
 		>
 			Alta rentabilidad
 
 			<div
-				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:right-[1.2rem]"
 			>
 				<div
-					class="bg-[url('/r-one.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
+					class="bg-[url('/r-one.jpg')] bg-cover bg-center rounded-xl w-[80px] h-[50px] lg:w-[100px] lg:h-[80px]"
 				></div>
 			</div>
 		</div>
 		<div
-			class="relative lg:w-[12rem] lg:h-[12rem] w-[11rem] h-[11rem] border-2 border-b-lime-600 border-r-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center"
+			class="relative lg:w-[12rem] lg:h-[12rem] w-[8rem] h-[8rem] max-sm:text-sm border-2 border-b-lime-600 border-r-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center"
 		>
 			Monetización de residuos
 
 			<div
-				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:right-[1.2rem]"
 			>
 				<div
-					class="bg-[url('/r-two.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
+					class="bg-[url('/r-two.jpg')] bg-cover bg-center rounded-xl w-[80px] h-[50px] lg:w-[100px] lg:h-[80px]"
 				></div>
 			</div>
 		</div>
 		<div
-			class="relative lg:w-[12rem] lg:h-[12rem] w-[11rem] h-[11rem] border-2 border-b-lime-600 border-l-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center max-sm:mr-4 max-sm:mt-8"
+			class="relative lg:w-[12rem] lg:h-[12rem] w-[8rem] h-[8rem] max-sm:text-sm border-2 border-b-lime-600 border-l-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center max-sm:mr-4 max-sm:mt-8"
 		>
 			Obtención de créditos de carbono
 
 			<div
-				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:right-[1.2rem]"
 			>
 				<div
-					class="bg-[url('/r-three.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
+					class="bg-[url('/r-three.jpg')] bg-cover bg-center rounded-xl w-[80px] h-[50px] lg:w-[100px] lg:h-[80px]"
 				></div>
 			</div>
 		</div>
 		<div
-			class="relative lg:w-[12rem] lg:h-[12rem] w-[11rem] h-[11rem] border-2 border-t-lime-600 border-r-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center max-sm:mt-8"
+			class="relative lg:w-[12rem] lg:h-[12rem] w-[8rem] h-[8rem] max-sm:text-sm border-2 border-t-lime-600 border-r-lime-600 p-4 text-muted-foreground bg-white shadow-md rounded-xl flex justify-center items-center max-sm:mt-8"
 		>
 			Reducción de costos operativos
 
 			<div
-				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:right-[1.2rem]"
 			>
 				<div
-					class="bg-[url('/r-four.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
+					class="bg-[url('/r-four.jpg')] bg-cover bg-center rounded-xl w-[80px] h-[50px] lg:w-[100px] lg:h-[80px]"
 				></div>
 			</div>
 		</div>

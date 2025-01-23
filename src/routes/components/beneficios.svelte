@@ -5,17 +5,17 @@
 		class="flex flex-row w-[80%] justify-center items-center lg:space-x-12 max-sm:flex-col max-sm:space-y-4"
 	>
 		<div
-			class="bg-[url('/b-one.jpg')] text-white bg-cover border w-full rounded-xl lg:h-[40rem] h-[20rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl"
+			class="bg-[url('/b-one.jpg')] text-white bg-cover border w-full rounded-xl lg:h-[40rem] h-[20rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl px-4"
 		>
 			<h3>Reducción de emisiones</h3>
 		</div>
 		<div
-			class="bg-[url('/b-two.jpg')] text-white bg-cover border w-full rounded-xl lg:h-[40rem] h-[20rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl"
+			class="bg-[url('/b-two.jpg')] text-white bg-cover border w-full rounded-xl lg:h-[40rem] h-[20rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl text-center px-4"
 		>
 			Gestión eficiente de residuos
 		</div>
 		<div
-			class="bg-[url('/b-three.jpg')] text-white bg-cover border w-full rounded-xl lg:h-[40rem] h-[20rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl text-center"
+			class="bg-[url('/b-three.jpg')] text-white bg-cover border w-full rounded-xl lg:h-[40rem] h-[20rem] flex justify-center items-center flex-col shadow-lg hover:border cursor-pointer hover:shadow-sm hover:border-black uppercase font-bold text-xl text-center px-4"
 		>
 			Fomento de la economía circular
 		</div>
