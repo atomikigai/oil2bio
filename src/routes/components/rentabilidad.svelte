@@ -30,7 +30,9 @@
 		>
 			Alta rentabilidad
 
-			<div class="absolute lg:bottom-[-.7rem] lg:right-[-.7rem] bottom-[-1.6rem] left-[-1.0rem]">
+			<div
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+			>
 				<div
 					class="bg-[url('/r-one.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
 				></div>
@@ -41,7 +43,9 @@
 		>
 			Monetización de residuos
 
-			<div class="absolute lg:bottom-[-.7rem] lg:right-[-.7rem] bottom-[-1.6rem] left-[-1.0rem]">
+			<div
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+			>
 				<div
 					class="bg-[url('/r-two.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
 				></div>
@@ -52,7 +56,9 @@
 		>
 			Obtención de créditos de carbono
 
-			<div class="absolute lg:bottom-[-.7rem] lg:right-[-.7rem] bottom-[-1.6rem] left-[-1.0rem]">
+			<div
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+			>
 				<div
 					class="bg-[url('/r-three.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
 				></div>
@@ -63,7 +69,9 @@
 		>
 			Reducción de costos operativos
 
-			<div class="absolute lg:bottom-[-.7rem] lg:right-[-.7rem] bottom-[-1.6rem] left-[-1.0rem]">
+			<div
+				class="absolute lg:bottom-[-1.5rem] lg:right-[-.8rem] max-sm:bottom-[-1.6rem] max-sm:left-[-1.0rem]"
+			>
 				<div
 					class="bg-[url('/r-four.jpg')] bg-cover bg-center rounded-xl w-[100px] h-[70px] lg:w-[100px] lg:h-[80px]"
 				></div>
