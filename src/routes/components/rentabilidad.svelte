@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="my-6 w-full lg:h-[60vh] max-sm:min-h-screen flex lg:flex-row flex-col lg:space-x-4 bg-[#f1f1f1]"
+	class="w-full lg:h-[60vh] max-sm:min-h-screen flex lg:flex-row flex-col lg:space-x-4 bg-[#f1f1f1]"
 >
 	<div
 		class="lg:w-[50%] justify-center lg:items-start flex flex-col lg:px-28 max-sm:w-full max-sm:px-8 max-sm:text-center items-center"
