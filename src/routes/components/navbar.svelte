@@ -27,7 +27,7 @@
 		};
 	});
 
-	let mobile = $state(true);
+	let mobile = $state(false);
 
 	function handleMobile() {
 		mobile = !mobile;

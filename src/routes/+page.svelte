@@ -10,6 +10,7 @@
 	import Navbar from './components/navbar.svelte';
 	import Beneficios from './components/beneficios.svelte';
 	import Mosaico from './components/mosaico.svelte';
+	import Rentabilidad from './components/rentabilidad.svelte';
 </script>
 
 <div class="w-full relative min-h-screen flex flex-col justify-center items-center">
@@ -18,6 +19,7 @@
 
 	<Beneficios />
 	<Mosaico />
+	<Rentabilidad />
 	<!-- <div class="flex justify-center items-center mt-4 rounded-lg w-[60rem] h-[30rem] bg-black">
 		<Play color="#fff" size={50} />
 	</div> -->
