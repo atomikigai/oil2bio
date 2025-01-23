@@ -47,7 +47,7 @@
 </nav>
 
 <Button
-	class={mobile ? 'hidden' : 'w-fit bg-white bg-opacity-50 rounded-md p-2 fixed top-5 left-5 z-20'}
+	class="w-fit bg-white bg-opacity-50 rounded-md p-2 fixed top-5 left-5 z-20 lg:hidden block"
 	onclick={() => handleMobile()}
 >
 	<Menu color={currentSection === 'white' ? '#fff' : '#111'} />
