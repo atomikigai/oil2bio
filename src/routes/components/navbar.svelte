@@ -35,9 +35,7 @@
 </script>
 
 <nav
-	class={`fixed top-10 bg-opacity-10 rounded-md px-4 py-2 transition-all duration-300 lg:block hidden ${
-		currentSection === 'white' ? 'text-white' : 'text-black'
-	}`}
+	class="absolute text-white top-10 bg-opacity-10 rounded-md px-4 py-2 transition-all duration-300 lg:block hidden"
 >
 	<Button variant="ghost" class="font-bold">Sobre nosotros</Button>
 	<Button variant="ghost" class="font-bold">Proyecto</Button>
