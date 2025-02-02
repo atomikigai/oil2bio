@@ -16,7 +16,7 @@
 
 <nav class={isWhite ? styles + 'text-white' : styles + ' text-black'}>
 	<Button variant="ghost" class="font-bold" onclick={() => goto('/')}>Inicio</Button>
-	<Button variant="ghost" class="font-bold">Sobre nosotros</Button>
+	<Button variant="ghost" class="font-bold" onclick={() => goto('/about')}>Sobre nosotros</Button>
 	<Button variant="ghost" class="font-bold">Proyecto</Button>
 	<Button variant="ghost" class="font-bold">Inversores</Button>
 	<Button variant="ghost" class="font-bold">Noticias</Button>
@@ -43,7 +43,7 @@
 			<X color="#111" />
 		</Button>
 
-		<Button variant="ghost" class="font-bold">Sobre nosotros</Button>
+		<Button variant="ghost" class="font-bold" onclick={() => goto('/about')}>Sobre nosotros</Button>
 		<Button variant="ghost" class="font-bold">Proyecto</Button>
 		<Button variant="ghost" class="font-bold">Inversores</Button>
 		<Button variant="ghost" class="font-bold">Noticias</Button>

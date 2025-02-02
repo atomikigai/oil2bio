@@ -34,19 +34,19 @@
 	</div>
 
 	<div
-		class="bg-[url('/c-one.jpg')] left-[15rem] top-[10rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
+		class="bg-[url('/c-one.jpg')] 2xl:left-[15rem] 2xl:top-[10rem] lg:left-[8rem] lg:top-[10rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
 	></div>
 
 	<div
-		class="bg-[url('/c-two.jpg')] left-[10rem] top-[28rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
+		class="bg-[url('/c-two.jpg')] 2xl:left-[10rem] 2xl:top-[28rem] lg:left-[5rem] lg:top-[27rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
 	></div>
 
 	<div
-		class="bg-[url('/c-three.jpg')] right-[15rem] top-[12rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
+		class="bg-[url('/c-three.jpg')] 2xl:right-[15rem] 2xl:top-[12rem] lg:right-[8rem] lg:top-[10rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
 	></div>
 
 	<div
-		class="bg-[url('/c-four.jpg')] right-[10rem] top-[28rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
+		class="bg-[url('/c-four.jpg')] 2xl:right-[10rem] 2xl:top-[28rem] lg:right-[4rem] lg:top-[26rem] rounded-xl absolute h-[300px] w-[300px] bg-center bg-cover lg:flex hidden"
 	></div>
 
 	<form method="POST" class="lg:w-[30%] w-[80%]" use:enhance>
