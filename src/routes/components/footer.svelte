@@ -2,7 +2,7 @@
 	import { Facebook, Instagram, Twitter } from 'lucide-svelte';
 </script>
 
-<div class="w-full h-[40vh] bg-white flex flex-row py-12 px-12 border-t">
+<div class="w-full h-[40vh] bg-white lg:flex flex-row py-12 px-12 border-t hidden">
 	<div class="flex flex-col w-[25%] space-y-4">
 		<h3 class="font-bold">Empresa</h3>
 		<p class="text-muted-foreground">Sobre nosotros</p>
