@@ -1,25 +1,20 @@
 <script lang="ts">
-	import { ChartNoAxesCombined, Cpu, Link, MoveRight, Play, Sprout, Wallet } from 'lucide-svelte';
-	import Button from '$lib/components/ui/button/button.svelte';
-	import * as Card from '$lib/components/ui/card/index.js';
-	import BeneficiosAmbientales from './components/beneficiosAmbientales.svelte';
-	import BeneficiosEconomicosConsumidor from './components/beneficiosEconomicosConsumidor.svelte';
-	import BeneficiosEconomicosEmpresas from './components/beneficiosEconomicosEmpresas.svelte';
-	import Innovacion from './components/innovacion.svelte';
 	import HeroSection from './components/heroSection.svelte';
 	import Navbar from './components/navbar.svelte';
 	import Beneficios from './components/beneficios.svelte';
 	import Mosaico from './components/mosaico.svelte';
 	import Rentabilidad from './components/rentabilidad.svelte';
+	import Footer from './components/footer.svelte';
 </script>
 
 <div class="w-full relative min-h-screen flex flex-col justify-center items-center">
 	<HeroSection />
-	<Navbar />
+	<Navbar isWhite={true} />
 
 	<Beneficios />
 	<Mosaico />
 	<Rentabilidad />
+	<Footer />
 	<!-- <div class="flex justify-center items-center mt-4 rounded-lg w-[60rem] h-[30rem] bg-black">
 		<Play color="#fff" size={50} />
 	</div> -->

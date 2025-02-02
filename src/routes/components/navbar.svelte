@@ -1,54 +1,35 @@
-<script>
-	import { onMount } from 'svelte';
+<script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import { Menu, X } from 'lucide-svelte';
+	import { goto } from '$app/navigation';
 
-	let currentSection = $state('white');
-
-	// Función para detectar la sección visible
-	function handleScroll() {
-		const sections = document.querySelectorAll('section');
-		const scrollPosition = window.scrollY + window.innerHeight / 2; // Posición actual del scroll
-
-		sections.forEach((section) => {
-			const sectionTop = section.offsetTop;
-			const sectionHeight = section.offsetHeight;
-
-			if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-				currentSection = section.id;
-			}
-		});
-	}
-
-	onMount(() => {
-		window.addEventListener('scroll', handleScroll);
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	});
+	let { isWhite }: { isWhite: boolean } = $props();
 
 	let mobile = $state(false);
+	let styles =
+		'absolute  z-20 top-10 bg-opacity-10 rounded-md px-4 py-2 transition-all duration-300 lg:block hidden ';
 
 	function handleMobile() {
 		mobile = !mobile;
 	}
 </script>
 
-<nav
-	class="absolute text-white top-10 bg-opacity-10 rounded-md px-4 py-2 transition-all duration-300 lg:block hidden"
->
+<nav class={isWhite ? styles + 'text-white' : styles + ' text-black'}>
+	<Button variant="ghost" class="font-bold" onclick={() => goto('/')}>Inicio</Button>
 	<Button variant="ghost" class="font-bold">Sobre nosotros</Button>
 	<Button variant="ghost" class="font-bold">Proyecto</Button>
 	<Button variant="ghost" class="font-bold">Inversores</Button>
 	<Button variant="ghost" class="font-bold">Noticias</Button>
-	<Button variant="default" class="font-bold bg-lime-600">Contacto</Button>
+	<Button variant="default" class="font-bold bg-lime-600" onclick={() => goto('/contact')}
+		>Contacto</Button
+	>
 </nav>
 
 <Button
 	class="w-fit bg-white bg-opacity-50 rounded-md p-2 fixed top-5 left-5 z-20 lg:hidden block"
 	onclick={() => handleMobile()}
 >
-	<Menu color={currentSection === 'white' ? '#fff' : '#111'} />
+	<Menu color={isWhite ? '#fff' : '#111'} />
 </Button>
 
 {#if mobile}
@@ -66,6 +47,6 @@
 		<Button variant="ghost" class="font-bold">Proyecto</Button>
 		<Button variant="ghost" class="font-bold">Inversores</Button>
 		<Button variant="ghost" class="font-bold">Noticias</Button>
-		<Button variant="ghost" class="font-bold">Contacto</Button>
+		<Button variant="ghost" class="font-bold" onclick={() => goto('/contact')}>Contacto</Button>
 	</div>
 {/if}
