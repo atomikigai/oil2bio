@@ -3,18 +3,18 @@
 	import { Menu, X } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 
-	let { isWhite }: { isWhite: boolean } = $props();
+	let { isWhite, more }: { isWhite: boolean; more?: string } = $props();
 
 	let mobile = $state(false);
 	let styles =
-		'absolute  z-20 top-10 bg-opacity-10 rounded-md px-4 py-2 transition-all duration-300 lg:block hidden ';
+		'z-20 top-10 bg-opacity-10 rounded-md px-4 py-2 transition-all duration-300 lg:block hidden ';
 
 	function handleMobile() {
 		mobile = !mobile;
 	}
 </script>
 
-<nav class={isWhite ? styles + 'text-white' : styles + ' text-black'}>
+<nav class={isWhite ? more + styles + ' text-white ' : more + styles + ' text-black '}>
 	<Button variant="ghost" class="font-bold" onclick={() => goto('/')}>Inicio</Button>
 	<Button variant="ghost" class="font-bold" onclick={() => goto('/about')}>Sobre nosotros</Button>
 	<Button variant="ghost" class="font-bold">Proyecto</Button>
@@ -26,7 +26,7 @@
 </nav>
 
 <Button
-	class="w-fit bg-white bg-opacity-50 rounded-md p-2 fixed top-5 left-5 z-20 lg:hidden block"
+	class="w-fit bg-transparent bg-opacity-50 rounded-md p-2 fixed top-5 left-5 z-20 lg:hidden block"
 	onclick={() => handleMobile()}
 >
 	<Menu color={isWhite ? '#fff' : '#111'} />

@@ -25,9 +25,11 @@
 	const { form: formData, enhance, delayed } = form;
 </script>
 
-<div id="black" class="w-full min-h-[90vh] flex flex-col justify-center items-center">
-	<Navbar isWhite={false} />
+<div class="w-full h-16 flex items-center justify-center">
+	<Navbar isWhite={false} more="" />
+</div>
 
+<div id="black" class="w-full min-h-[90vh] flex flex-col justify-center items-center">
 	<div class="lg:w-[30%] w-[80%] my-12">
 		<h3 class="text-xl font-bold">Contacta con nosotros</h3>
 		<p>Nuestros expertos se pondran en contacto contigo.</p>

@@ -4,14 +4,14 @@
 	import Navbar from '../components/navbar.svelte';
 </script>
 
-<div class="w-full flex justify-center bg-white h-[12vh]">
-	<Navbar isWhite={false} />
+<div class="flex justify-center h-16 items-center bg-transparent">
+	<Navbar isWhite={false} more=" bg-transparent " />
 </div>
 
-<div class="flex flex-row items-center px-8 bg-[#f1f1f1] py-12">
-	<div class="w-[50%]">
-		<h3 class="text-4xl font-bold mb-2">Misión y Visión</h3>
-		<p>
+<div class="lg:flex lg:flex-row flex flex-col items-center lg:px-12 lg:py-12 max-md:py-20">
+	<div class="lg:w-[50%] w-full">
+		<h3 class="text-4xl font-bold mb-2 max-md:text-center">Misión y Visión</h3>
+		<p class="max-md:text-center">
 			Misión En Oil2Bio, nuestra misión es transformar la industria energética mediante soluciones
 			sostenibles que convierten aceites usados en biocombustibles de alto rendimiento. Nos
 			comprometemos a reducir la huella de carbono y promover una economía circular, ofreciendo

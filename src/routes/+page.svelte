@@ -9,7 +9,7 @@
 
 <div class="w-full relative min-h-screen flex flex-col justify-center items-center">
 	<HeroSection />
-	<Navbar isWhite={true} />
+	<Navbar isWhite={true} more=" absolute " />
 
 	<Beneficios />
 	<Mosaico />
